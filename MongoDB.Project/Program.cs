@@ -8,16 +8,17 @@ class Program
         var writer = new MongoWriter("mongodb://localhost:27017", "bikeshop", "entity");
         var location = new Location
         {
-            Name = "Bird Leg Bikes",
+            Name = "Trek Bikes",
+            Address = "1223 Main Street",
             City = "Jacksonville",
             State = "Florida",
             ZipCode = 32210,
-            GroupRide = true,
+            GroupRide = false,
             LocationServices = new LocationServices
             {
                 BikeFittings = true,
                 BikeRepairs = true,
-                BikeRentals = false,
+                BikeRentals = true,
                 BikeSales = true
             }
 

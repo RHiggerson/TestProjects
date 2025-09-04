@@ -13,6 +13,8 @@ namespace MongoDB.Project.Models.Location
         public Guid Id { get; set; } = Guid.NewGuid();
         [BsonElement("Name")]
         public string? Name { get; set; }
+        [BsonElement("Address")]
+        public string? Address { get; set; }
         [BsonElement("City")]
         public string? City { get; set; }
         [BsonElement("State")]
